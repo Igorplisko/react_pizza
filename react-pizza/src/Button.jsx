@@ -1,27 +1,21 @@
 import React from 'react';
+import classNames from 'classnames';
 
-class Button extends React.Component {
 
-   render() {
-      console.log(this.props);
-      return <button>Hello</button>
 
-   }
+const Button = (props) => {
+   console.log(props)
+   return (
+      <div>
+         <button
+            className={classNames('button', {
+               'button--outline': props.outline,
 
+            })} >
+            {props.children}
+         </button>
+      </div>
+   );
 }
 
 export default Button;
-
-
-
-
-
-// const Button = () => {
-//    return (
-//       <div>
-
-//       </div>
-//    );
-// }
-
-// export default Button;

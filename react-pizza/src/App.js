@@ -4,22 +4,13 @@ import Header from './Header';
 
 
 
-
-
 function App() {
-
-
-
-
 
   return (
     <div className="wrapper">
       <Header />
-      <Button />
-      <Button />
-
-
-      {/* <Button color="red" /> */}
+      <Button outline>New</Button>
+      <Button test>Old</Button>
       <div className="content">
         <div className="container">
           <div className="content__top">
