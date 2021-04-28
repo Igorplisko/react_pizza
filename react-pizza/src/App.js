@@ -11,12 +11,12 @@ function App() {
             <img width="38" src={logoSvg} alt="Pizza logo" />
             <div>
               <h1>React Pizza</h1>
-              <p>самая вкусная пицца во вселенной</p>
+              <p>The most delicious pizza in the universe</p>
             </div>
           </div>
           <div className="header__cart">
             <a href="/cart.html" className="button button--cart">
-              <span>520 ₽</span>
+              <span>520 $</span>
               <div className="button__delimiter"></div>
               <svg
                 width="18"
@@ -58,11 +58,11 @@ function App() {
             <div className="categories">
               <ul>
                 <li className="active">Все</li>
-                <li>Мясные</li>
-                <li>Вегетарианская</li>
-                <li>Гриль</li>
-                <li>Острые</li>
-                <li>Закрытые</li>
+                <li>Meat</li>
+                <li>Vegetarian</li>
+                <li>Grill</li>
+                <li>Spicy</li>
+                <li>Closed</li>
               </ul>
             </div>
             <div className="sort">
@@ -79,19 +79,19 @@ function App() {
                     fill="#2C2C2C"
                   />
                 </svg>
-                <b>Сортировка по:</b>
-                <span>популярности</span>
+                <b>Sort by:</b>
+                <span>popularity</span>
               </div>
               <div className="sort__popup">
                 <ul>
-                  <li className="active">популярности</li>
-                  <li>цене</li>
-                  <li>алфавиту</li>
+                  <li className="active">popularity</li>
+                  <li>price</li>
+                  <li>alphabet</li>
                 </ul>
               </div>
             </div>
           </div>
-          <h2 className="content__title">Все пиццы</h2>
+          <h2 className="content__title">All pizza</h2>
           <div className="content__items">
             <div className="pizza-block">
               <img
@@ -99,11 +99,11 @@ function App() {
                 src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
                 alt="Pizza"
               />
-              <h4 className="pizza-block__title">Чизбургер-пицца</h4>
+              <h4 className="pizza-block__title">Cheeseburger Pizza</h4>
               <div className="pizza-block__selector">
                 <ul>
-                  <li className="active">тонкое</li>
-                  <li>традиционное</li>
+                  <li className="active">thin doughh</li>
+                  <li>traditional</li>
                 </ul>
                 <ul>
                   <li className="active">26 см.</li>
@@ -112,7 +112,7 @@ function App() {
                 </ul>
               </div>
               <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от 395 ₽</div>
+                <div className="pizza-block__price">от 395 $</div>
                 <div className="button button--outline button--add">
                   <svg
                     width="12"
@@ -126,7 +126,7 @@ function App() {
                       fill="white"
                     />
                   </svg>
-                  <span>Добавить</span>
+                  <span>Add</span>
                   <i>2</i>
                 </div>
               </div>
@@ -139,8 +139,8 @@ function App() {
               <h4 className="pizza-block__title">Чизбургер-пицца</h4>
               <div className="pizza-block__selector">
                 <ul>
-                  <li className="active">тонкое</li>
-                  <li>традиционное</li>
+                  <li className="active">thin doughh</li>
+                  <li>traditional</li>
                 </ul>
                 <ul>
                   <li className="active">26 см.</li>
@@ -149,7 +149,7 @@ function App() {
                 </ul>
               </div>
               <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от 395 ₽</div>
+                <div className="pizza-block__price">от 395 $</div>
                 <div className="button button--outline button--add">
                   <svg
                     width="12"
@@ -163,7 +163,7 @@ function App() {
                       fill="white"
                     />
                   </svg>
-                  <span>Добавить</span>
+                  <span>Add</span>
                   <i>2</i>
                 </div>
               </div>
@@ -176,8 +176,8 @@ function App() {
               <h4 className="pizza-block__title">Чизбургер-пицца</h4>
               <div className="pizza-block__selector">
                 <ul>
-                  <li className="active">тонкое</li>
-                  <li>традиционное</li>
+                  <li className="active">thin doughh</li>
+                  <li>traditional</li>
                 </ul>
                 <ul>
                   <li className="active">26 см.</li>
@@ -186,7 +186,7 @@ function App() {
                 </ul>
               </div>
               <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от 395 ₽</div>
+                <div className="pizza-block__price">от 395 $</div>
                 <div className="button button--outline button--add">
                   <svg
                     width="12"
@@ -200,7 +200,7 @@ function App() {
                       fill="white"
                     />
                   </svg>
-                  <span>Добавить</span>
+                  <span>Add</span>
                   <i>2</i>
                 </div>
               </div>
@@ -213,8 +213,8 @@ function App() {
               <h4 className="pizza-block__title">Чизбургер-пицца</h4>
               <div className="pizza-block__selector">
                 <ul>
-                  <li className="active">тонкое</li>
-                  <li>традиционное</li>
+                  <li className="active">thin doughh</li>
+                  <li>traditional</li>
                 </ul>
                 <ul>
                   <li className="active">26 см.</li>
@@ -223,7 +223,7 @@ function App() {
                 </ul>
               </div>
               <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от 395 ₽</div>
+                <div className="pizza-block__price">от 395 $</div>
                 <div className="button button--outline button--add">
                   <svg
                     width="12"
@@ -237,7 +237,7 @@ function App() {
                       fill="white"
                     />
                   </svg>
-                  <span>Добавить</span>
+                  <span>Add</span>
                   <i>2</i>
                 </div>
               </div>
@@ -250,8 +250,8 @@ function App() {
               <h4 className="pizza-block__title">Чизбургер-пицца</h4>
               <div className="pizza-block__selector">
                 <ul>
-                  <li className="active">тонкое</li>
-                  <li>традиционное</li>
+                  <li className="active">thin doughh</li>
+                  <li>traditional</li>
                 </ul>
                 <ul>
                   <li className="active">26 см.</li>
@@ -260,7 +260,7 @@ function App() {
                 </ul>
               </div>
               <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от 395 ₽</div>
+                <div className="pizza-block__price">от 395 $</div>
                 <div className="button button--outline button--add">
                   <svg
                     width="12"
@@ -274,7 +274,7 @@ function App() {
                       fill="white"
                     />
                   </svg>
-                  <span>Добавить</span>
+                  <span>Add</span>
                   <i>2</i>
                 </div>
               </div>
@@ -287,8 +287,8 @@ function App() {
               <h4 className="pizza-block__title">Чизбургер-пицца</h4>
               <div className="pizza-block__selector">
                 <ul>
-                  <li className="active">тонкое</li>
-                  <li>традиционное</li>
+                  <li className="active">thin doughh</li>
+                  <li>traditional</li>
                 </ul>
                 <ul>
                   <li className="active">26 см.</li>
@@ -297,7 +297,7 @@ function App() {
                 </ul>
               </div>
               <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от 395 ₽</div>
+                <div className="pizza-block__price">от 395 $</div>
                 <div className="button button--outline button--add">
                   <svg
                     width="12"
@@ -311,7 +311,7 @@ function App() {
                       fill="white"
                     />
                   </svg>
-                  <span>Добавить</span>
+                  <span>Add</span>
                   <i>2</i>
                 </div>
               </div>
@@ -324,8 +324,8 @@ function App() {
               <h4 className="pizza-block__title">Чизбургер-пицца</h4>
               <div className="pizza-block__selector">
                 <ul>
-                  <li className="active">тонкое</li>
-                  <li>традиционное</li>
+                  <li className="active">thin doughh</li>
+                  <li>traditional</li>
                 </ul>
                 <ul>
                   <li className="active">26 см.</li>
@@ -334,7 +334,7 @@ function App() {
                 </ul>
               </div>
               <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от 395 ₽</div>
+                <div className="pizza-block__price">от 395 $</div>
                 <div className="button button--outline button--add">
                   <svg
                     width="12"
@@ -348,7 +348,7 @@ function App() {
                       fill="white"
                     />
                   </svg>
-                  <span>Добавить</span>
+                  <span>Add</span>
                   <i>2</i>
                 </div>
               </div>
@@ -361,8 +361,8 @@ function App() {
               <h4 className="pizza-block__title">Чизбургер-пицца</h4>
               <div className="pizza-block__selector">
                 <ul>
-                  <li className="active">тонкое</li>
-                  <li>традиционное</li>
+                  <li className="active">thin doughh</li>
+                  <li>traditional</li>
                 </ul>
                 <ul>
                   <li className="active">26 см.</li>
@@ -371,7 +371,7 @@ function App() {
                 </ul>
               </div>
               <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от 395 ₽</div>
+                <div className="pizza-block__price">от 395 $</div>
                 <div className="button button--outline button--add">
                   <svg
                     width="12"
@@ -385,7 +385,7 @@ function App() {
                       fill="white"
                     />
                   </svg>
-                  <span>Добавить</span>
+                  <span>Add</span>
                   <i>2</i>
                 </div>
               </div>
@@ -398,8 +398,8 @@ function App() {
               <h4 className="pizza-block__title">Чизбургер-пицца</h4>
               <div className="pizza-block__selector">
                 <ul>
-                  <li className="active">тонкое</li>
-                  <li>традиционное</li>
+                  <li className="active">thin doughh</li>
+                  <li>traditional</li>
                 </ul>
                 <ul>
                   <li className="active">26 см.</li>
@@ -408,7 +408,7 @@ function App() {
                 </ul>
               </div>
               <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от 395 ₽</div>
+                <div className="pizza-block__price">от 395 $</div>
                 <div className="button button--outline button--add">
                   <svg
                     width="12"
@@ -422,7 +422,7 @@ function App() {
                       fill="white"
                     />
                   </svg>
-                  <span>Добавить</span>
+                  <span>Add</span>
                   <i>2</i>
                 </div>
               </div>
