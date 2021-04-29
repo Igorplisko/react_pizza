@@ -1,29 +1,26 @@
 import React from 'react';
-import Button from './Button';
-import Header from './Header';
+import { Categories, Header } from './components';
 
 
 
 function App() {
 
+
   return (
     <div className="wrapper">
       <Header />
-      <Button outline>New</Button>
-      <Button test>Old</Button>
       <div className="content">
         <div className="container">
           <div className="content__top">
-            <div className="categories">
-              <ul>
-                <li className="active">All</li>
-                <li>Meat</li>
-                <li>Vegetarian</li>
-                <li>Grill</li>
-                <li>Spicy</li>
-                <li>Closed</li>
-              </ul>
-            </div>
+            <Categories
+              onClick={(name) => console.log(name)}
+              items={[
+                'Meat',
+                'Vegetarian',
+                'Grill',
+                'Closed',
+                'Spicy'
+              ]} />
             <div className="sort">
               <div className="sort__label">
                 <svg
@@ -389,7 +386,7 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
