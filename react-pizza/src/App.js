@@ -13,7 +13,7 @@ function App() {
         <div className="container">
           <div className="content__top">
             <Categories
-              onClick={(name) => console.log(name)}
+              // onClick={(name) => console.log(name)}
               items={[
                 'Meat',
                 'Vegetarian',
