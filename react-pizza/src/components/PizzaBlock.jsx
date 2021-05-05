@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function PizzaBlock({ name, imageUrl, price }) {
-   const [activeType, setActiveType] = useState(1)
+   const [activeType, setActiveType] = useState()
 
 
    return (
@@ -15,7 +15,7 @@ function PizzaBlock({ name, imageUrl, price }) {
          <div className="pizza-block__selector">
             <ul>
                <li className={activeType === 0 ? 'active' : ''}>thin dough</li>
-               <li className="disabled">traditional</li>ty
+               <li className={activeType === 0 ? 'active' : ''}>traditional</li>
             </ul>
             <ul>
                <li className="active">26 sm.</li>
