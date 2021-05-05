@@ -1,22 +1,22 @@
 import React from 'react'
 
-function PizzaBlock({ name, price }) {
+function PizzaBlock({ name, imageUrl, price }) {
    return (
       <div className="pizza-block">
          <img
             className="pizza-block__image"
-            src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg"
+            src={imageUrl}
             alt="Pizza"
          />
          <h4 className="pizza-block__title">{name}</h4>
          <div className="pizza-block__selector">
             <ul>
                <li className="active">thin dough</li>
-               <li>traditional</li>
+               <li onClick={() => alert(1, 2, 3)} className="disabled">traditional</li>
             </ul>
             <ul>
                <li className="active">26 sm.</li>
-               <li>30 sm.</li>
+               <li className="disabled">30 sm.</li>
                <li>40 sm.</li>
             </ul>
          </div>
