@@ -1,29 +1,41 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
-function SortPopup() {
-
+function SortPopup({ items }) {
    const [visiblePopup, setVisiblePopup] = useState(false)
+   const [activeItem, setActiveItem] = useState(0)
+   const sortRef = useRef()
+   const activeLabel = items[activeItem]
+
 
    const toggleVisiblePopup = () => {
       setVisiblePopup(!visiblePopup)
 
    }
-   const handleOutsideClick = () => {
-      console.log('cliced')
+   const handleOutsideClick = (e) => {
+      if (!e.path.includes(sortRef.current)) {
+         setVisiblePopup(false)
+      }
+   }
 
+   const onSelectItem = (i) => {
+      setActiveItem(i)
+      setVisiblePopup(false)
 
    }
 
+
    useEffect(() => {
-      document.body.addEventListener('click', () => console.log('clicked'))
+      document.body.addEventListener('click', handleOutsideClick)
+      // console.log(sortRef.current)
 
    }, [])
 
-
    return (
-      <div className="sort">
+      <div ref={sortRef} className="sort">
          <div className="sort__label">
             <svg
+               className={visiblePopup ? 'rotated' : ''}
+
                width="10"
                height="6"
                viewBox="0 0 10 6"
@@ -36,13 +48,19 @@ function SortPopup() {
                />
             </svg>
             <b>Sort by:</b>
-            <span onClick={toggleVisiblePopup}>popularity</span>
+            <span onClick={toggleVisiblePopup}>{activeLabel}</span>
          </div>
          {  visiblePopup && <div className="sort__popup">
             <ul>
-               <li className="active">popularity</li>
-               <li>price</li>
-               <li>alphabet</li>
+               {items &&
+                  items.map((name, index1) => (
+                     <li
+                        onClick={() => onSelectItem(index1)}
+                        className={activeItem === index1 ? 'active' : ''}
+                        key={`${name}_${index1}`}>
+                        {name}
+                     </li>
+                  ))}
             </ul>
          </div>}
       </div>
