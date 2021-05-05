@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function PizzaBlock({ name, imageUrl, price }) {
+   const [activeType, setActiveType] = useState(1)
+
+
    return (
       <div className="pizza-block">
          <img
@@ -11,8 +14,8 @@ function PizzaBlock({ name, imageUrl, price }) {
          <h4 className="pizza-block__title">{name}</h4>
          <div className="pizza-block__selector">
             <ul>
-               <li className="active">thin dough</li>
-               <li onClick={() => alert(1, 2, 3)} className="disabled">traditional</li>
+               <li className={activeType === 0 ? 'active' : ''}>thin dough</li>
+               <li className="disabled">traditional</li>ty
             </ul>
             <ul>
                <li className="active">26 sm.</li>
