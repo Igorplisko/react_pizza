@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 import classNames from 'classnames'
-
 function PizzaBlock({ name, imageUrl, price, types, sizes }) {
    const availableTypes = ['thin dough', 'traditional'];
    const availableSizes = [26, 30, 40]
@@ -16,9 +15,6 @@ function PizzaBlock({ name, imageUrl, price, types, sizes }) {
    const onSelectSize = (i) => {
       setActiveSize(i)
    }
-
-   // console.log(name, types)
-
 
    return (
       <div className="pizza-block">
@@ -41,7 +37,6 @@ function PizzaBlock({ name, imageUrl, price, types, sizes }) {
                      {type}
                   </li>
                ))}
-
             </ul>
             <ul>
                {availableSizes.map((size, index) => (
@@ -95,8 +90,5 @@ PizzaBlock.defaultProps = {
    types: [],
    size: [],
 };
-
-
-
 
 export default PizzaBlock
