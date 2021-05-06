@@ -3,7 +3,7 @@ import React from 'react'
 import { Categories, SortPopup, PizzaBlock } from '../components';
 
 function Home({ itemsPizzas }) {
-   console.log(itemsPizzas)
+
    return (
       <div className="content">
          <div className="container">
