@@ -34,8 +34,11 @@ class App extends React.Component {
 
 
   render() {
+
+    console.log(this.props)
+
     return (
-      <div className="wrapper">
+      < div className="wrapper" >
         <Header />
         <div className="content">
           <Route path="/" render={() => <Home itemsPizzas={[]} />} exact />
@@ -48,7 +51,7 @@ class App extends React.Component {
 
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     items: state.pizzas.items
   }
