@@ -49,10 +49,15 @@ class App extends React.Component {
 }
 
 const mapStateToProps = state => {
-  console.log(state);
+  return {
+    items: state.pizzas.items
+  }
 };
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps)(App);        //! передаеться ысе сосстояние в пропсы 
+
+
+
 
 
 
